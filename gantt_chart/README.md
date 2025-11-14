@@ -24,29 +24,27 @@ Mermaidのガントチャートで使用するタグは以下の通り。
     init: {
         'theme': 'default',
         'themeVariables': {
-            'sectionBkgColor': '#b3b3ff',
-            'altSectionBkgColor': '#b3b3ff',
-            'sectionBkgColor2': '#b3b3ff',
+            'sectionBkgColor': '#d1d1ff',
+            'altSectionBkgColor': '#d1d1ff',
+            'sectionBkgColor2': '#d1d1ff',
 
-            'textColor': '#ffffff',
+            'textColor': '#000000',
             'taskTextLightColor': '#000000',
-            'taskTextDarkColor': '#ffffff',
+            'taskTextDarkColor': '#000000',
 
             'taskBkgColor': 'transparent',
             'taskBorderColor': 'transparent',
-            'taskTextColor': '#ffffff',
 
-            'critBkgColor': '#000080',
-            'critBorderColor': '#000080',
-            'critTextColor': '#ffffff',
+            'taskTextColor': '#000000',
+            'taskTextOutsideColor': '#000000',
+            'critBkgColor': '#b7c7f8',
+            'critBorderColor': '#b7c7f8',
 
-            'activeTaskBkgColor': '#ff4500',
-            'activeTaskBorderColor': '#ff4500',
+            'activeTaskBkgColor': '#ffa965',
+            'activeTaskBorderColor': '#ffa965',
 
-            'doneTaskBkgColor': '#808080',
-            'doneTaskBorderColor': '#808080',
-
-            'milestoneTextColor': '#ffffff'
+            'doneTaskBkgColor': '#c0c0c0',
+            'doneTaskBorderColor': '#c0c0c0'
         }
     }
 }%%
