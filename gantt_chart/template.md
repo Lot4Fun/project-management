@@ -31,6 +31,59 @@
 }%%
 
 gantt
+    title  マイルストーン
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m/%d
+    tickInterval 1week
+    excludes  weekends
+
+    %% プロジェクト全体の期間を共通で設定するためのダミーセクション
+    section # Milestones
+        . :, 2025-11-07, 2025-12-08
+
+    section マイルストーン
+        キックオフ    :milestone,crit, 2025-11-10, 0d
+        API設計完了   :milestone,crit, 2025-11-15, 0d
+        UI設計完了    :milestone,crit, 2025-11-15, 0d
+        実装完了      :milestone,crit, 2025-11-28, 0d
+        テスト完了    :milestone,crit, 2025-12-05, 0d
+
+    %% 上下のマージンを調整するためのダミーセクション
+    section .
+        . :, 2025-11-07, 2025-12-08
+```
+
+```mermaid
+%%{
+    init: {
+        'theme': 'default',
+        'themeVariables': {
+            'sectionBkgColor': '#d1d1ff',
+            'altSectionBkgColor': '#d1d1ff',
+            'sectionBkgColor2': '#d1d1ff',
+
+            'textColor': '#000000',
+            'taskTextLightColor': '#000000',
+            'taskTextDarkColor': '#000000',
+
+            'taskBkgColor': 'transparent',
+            'taskBorderColor': 'transparent',
+
+            'taskTextColor': '#000000',
+            'taskTextOutsideColor': '#000000',
+            'critBkgColor': '#b7c7f8',
+            'critBorderColor': '#b7c7f8',
+
+            'activeTaskBkgColor': '#ffa965',
+            'activeTaskBorderColor': '#ffa965',
+
+            'doneTaskBkgColor': '#c0c0c0',
+            'doneTaskBorderColor': '#c0c0c0'
+        }
+    }
+}%%
+
+gantt
     title  API開発
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%d
